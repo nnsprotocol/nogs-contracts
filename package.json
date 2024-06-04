@@ -1,0 +1,42 @@
+{
+  "name": "nogs-contracts",
+  "version": "0.0.0",
+  "description": "Contract for NOGS",
+  "author": "apbigcod <apbigcod@proton.me>",
+  "homepage": "",
+  "license": "ISC",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:ganache": "npx hardhat deploy --network ganache",
+    "deploy:goerli": "npx hardhat deploy --network goerli",
+    "export:abi": "npx hardhat clear-abi && npx hardhat export-abi",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.2.0",
+    "@types/luxon": "^3.3.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "@openzeppelin/contracts-upgradeable": "^4.8.3",
+    "hardhat-abi-exporter": "^2.10.1"
+  }
+}

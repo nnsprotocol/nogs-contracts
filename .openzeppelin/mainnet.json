@@ -1,0 +1,192 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xEBA5C66565569a6F16cdf1083d5B4AdB0aD6cE55",
+    "txHash": "0x5fd2b9979f69d8fc8145c75af6f19e9a505a5385ac25eb66ea7a44a85ba24ee7"
+  },
+  "proxies": [
+    {
+      "address": "0xb168615d5E3f8C8E58CA9A48aaA7D936BB77CC6e",
+      "txHash": "0xe30c26711192f5763b7b65a2cf57f1e39d9dc7b1e4d5d2737282dd906e389ec0",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "08cfca231787d15951c0adc8000da563e5f7edecd1c6b7fd2d720082268203e5": {
+      "address": "0x9e1579e329f7f3558c317988A8076528Af1d4725",
+      "txHash": "0x6fa112618df9ccadde396b40e585fa7b9b57bac17543c4d44bfedbc14d71cd39",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:88"
+          },
+          {
+            "label": "stakes",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_array(t_struct(Stake)5286_storage)dyn_storage)",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:26"
+          },
+          {
+            "label": "tokenIdToStakeIdx",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:28"
+          },
+          {
+            "label": "usedNonces",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:31"
+          },
+          {
+            "label": "lastWithdraw",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:34"
+          },
+          {
+            "label": "nft",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_contract(IERC721)3154",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:37"
+          },
+          {
+            "label": "coin",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_contract(IERC20)1674",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:39"
+          },
+          {
+            "label": "signer",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_address",
+            "contract": "NNSStaking",
+            "src": "contracts/NNSStaking.sol:41"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Stake)5286_storage)dyn_storage": {
+            "label": "struct NNSStaking.Stake[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)1674": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC721)3154": {
+            "label": "contract IERC721",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_array(t_struct(Stake)5286_storage)dyn_storage)": {
+            "label": "mapping(address => struct NNSStaking.Stake[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+            "label": "mapping(address => mapping(uint256 => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Stake)5286_storage": {
+            "label": "struct NNSStaking.Stake",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
